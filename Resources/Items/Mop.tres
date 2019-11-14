@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Mop"
+plural_name = "Mops"
+min_amount = 99
+max_amount = 99
+min_amount_money = 1
+max_amount_money = 6
+min_amount_balloons = 0
+max_amount_balloons = 0
+min_time = 18.0
+max_time = 22.0
+description_function = "get_mop_description"

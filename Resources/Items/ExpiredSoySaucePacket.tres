@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Expired Soy Sauce Packet"
+plural_name = "Expired Soy Sauce Packets"
+min_amount = 100
+max_amount = 300
+min_amount_money = 1
+max_amount_money = 3
+min_amount_balloons = 0
+max_amount_balloons = 0
+min_time = 18.0
+max_time = 22.0
+description_function = "get_expired_soy_sauce_packet_description"

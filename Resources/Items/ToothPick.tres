@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Tooth Pick"
+plural_name = "Tooth Picks"
+min_amount = 1
+max_amount = 1
+min_amount_money = 0
+max_amount_money = 0
+min_amount_balloons = 5
+max_amount_balloons = 25
+min_time = 22.0
+max_time = 33.0
+description_function = "get_tooth_pick_description"

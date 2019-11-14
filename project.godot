@@ -1,0 +1,99 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Item",
+"language": "GDScript",
+"path": "res://Classes/Item.gd"
+}, {
+"base": "Resource",
+"class": "Job",
+"language": "GDScript",
+"path": "res://Classes/Job.gd"
+}, {
+"base": "Resource",
+"class": "Person",
+"language": "GDScript",
+"path": "res://Classes/Person.gd"
+}, {
+"base": "Resource",
+"class": "Unlock",
+"language": "GDScript",
+"path": "res://Classes/Unlock.gd"
+} ]
+_global_script_class_icons={
+"Item": "",
+"Job": "",
+"Person": "",
+"Unlock": ""
+}
+
+[application]
+
+config/name="BalloonJam2019"
+run/main_scene="res://Panels/Main/Game.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+JobDescriptions="*res://Autoloads/JobDescriptions.gd"
+JobFunctions="*res://Autoloads/JobFunctions.gd"
+Jobs="*res://Autoloads/Jobs.gd"
+Global="*res://Autoloads/Global.gd"
+UnlockController="*res://Autoloads/UnlockController.gd"
+UnlockFunctions="*res://Autoloads/UnlockFunctions.gd"
+UnlockEventDescriptionFunctions="*res://Autoloads/UnlockEventDescriptionFunctions.gd"
+Unlocks="*res://Autoloads/Unlocks.gd"
+ItemDescriptions="*res://Autoloads/ItemDescriptions.gd"
+Utils="*res://Autoloads/Utils.gd"
+People="*res://Autoloads/People.gd"
+Items="*res://Autoloads/Items.gd"
+
+[debug]
+
+gdscript/warnings/unused_variable=false
+gdscript/warnings/unused_class_variable=false
+gdscript/warnings/unused_argument=false
+gdscript/warnings/unused_signal=false
+gdscript/warnings/return_value_discarded=false
+
+[display]
+
+window/size/width=1080
+window/size/resizable=false
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[rendering]
+
+environment/default_clear_color=Color( 0.419608, 0.419608, 0.419608, 1 )
+environment/default_environment="res://default_env.tres"

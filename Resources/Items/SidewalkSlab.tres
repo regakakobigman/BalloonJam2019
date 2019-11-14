@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Sidewalk Slab"
+plural_name = "Sidewalk Slabs"
+min_amount = 10
+max_amount = 30
+min_amount_money = 5
+max_amount_money = 15
+min_amount_balloons = 0
+max_amount_balloons = 0
+min_time = 19.0
+max_time = 22.0
+description_function = "get_sidewalk_slab_description"

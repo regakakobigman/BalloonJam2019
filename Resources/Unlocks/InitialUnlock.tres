@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Unlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+money_threshold = 100
+balloons_threshold = 0
+total_money_threshold = 0
+total_balloons_threshold = 0
+unlock_function = ""
+event_description_function = ""
+dependent_unlocks = [  ]
+dependent_jobs = [ "basic_buy_1" ]

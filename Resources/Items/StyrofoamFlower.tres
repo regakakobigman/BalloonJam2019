@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Styrofoam Flower"
+plural_name = "Styrofoam Flowers"
+min_amount = 4
+max_amount = 8
+min_amount_money = 12
+max_amount_money = 64
+min_amount_balloons = 0
+max_amount_balloons = 1
+min_time = 18.0
+max_time = 27.0
+description_function = "get_styrofoam_flower_description"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Fridge"
+plural_name = "Fridges"
+min_amount = 5
+max_amount = 12
+min_amount_money = 27
+max_amount_money = 47
+min_amount_balloons = 1
+max_amount_balloons = 1
+min_time = 21.0
+max_time = 24.0
+description_function = "get_fridge_description"

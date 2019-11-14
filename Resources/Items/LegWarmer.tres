@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Leg Warmer"
+plural_name = "Leg Warmers"
+min_amount = 1
+max_amount = 5
+min_amount_money = 330
+max_amount_money = 660
+min_amount_balloons = 1
+max_amount_balloons = 3
+min_time = 21.0
+max_time = 26.0
+description_function = "get_leg_warmer_description"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Pound of Beef"
+plural_name = "Pounds of Beef"
+min_amount = 100
+max_amount = 200
+min_amount_money = 2
+max_amount_money = 5
+min_amount_balloons = 0
+max_amount_balloons = 0
+min_time = 19.0
+max_time = 24.0
+description_function = "get_pound_of_beef_description"

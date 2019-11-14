@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Expired Seat Belt"
+plural_name = "Expired Seat Belts"
+min_amount = 1
+max_amount = 3
+min_amount_money = 80
+max_amount_money = 206
+min_amount_balloons = 2
+max_amount_balloons = 7
+min_time = 20.0
+max_time = 26.0
+description_function = "get_expired_seat_belt_description"

@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Themes/Basic.tres" type="Theme" id=1]
+[ext_resource path="res://Panels/Main/Game.gd" type="Script" id=2]
+[ext_resource path="res://Panels/Main/InfoPanel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Panels/Main/JobController.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Panels/Main/BalloonPreview.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Panels/Main/MarketController.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Panels/Main/EventLog.tscn" type="PackedScene" id=7]
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="VBC" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="InfoPanel" parent="VBC" instance=ExtResource( 3 )]
+margin_bottom = 37.0
+
+[node name="HBC" type="HBoxContainer" parent="VBC"]
+margin_top = 41.0
+margin_right = 1080.0
+margin_bottom = 600.0
+size_flags_vertical = 3
+
+[node name="VBC" type="VBoxContainer" parent="VBC/HBC"]
+margin_right = 386.0
+margin_bottom = 559.0
+rect_min_size = Vector2( 386, 0 )
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="VBC/HBC/VBC"]
+margin_right = 386.0
+margin_bottom = 31.0
+
+[node name="ResourcesLabel" type="Label" parent="VBC/HBC/VBC/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 379.0
+margin_bottom = 24.0
+text = "You have $1.00 and 0 balloons"
+align = 1
+
+[node name="JobController" parent="VBC/HBC/VBC" instance=ExtResource( 4 )]
+margin_top = 35.0
+margin_bottom = 559.0
+size_flags_vertical = 3
+
+[node name="VC" type="ViewportContainer" parent="VBC/HBC"]
+margin_left = 390.0
+margin_right = 690.0
+margin_bottom = 559.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 3
+stretch = true
+
+[node name="Viewport" type="Viewport" parent="VBC/HBC/VC"]
+size = Vector2( 300, 559 )
+own_world = true
+transparent_bg = true
+handle_input_locally = false
+usage = 0
+render_target_update_mode = 3
+
+[node name="BalloonPreview" parent="VBC/HBC/VC/Viewport" instance=ExtResource( 5 )]
+position = Vector2( 150, 662 )
+
+[node name="VSC" type="VSplitContainer" parent="VBC/HBC"]
+margin_left = 694.0
+margin_right = 1080.0
+margin_bottom = 559.0
+rect_min_size = Vector2( 386, 0 )
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBC/HBC/VSC"]
+margin_right = 386.0
+margin_bottom = 397.0
+rect_min_size = Vector2( 0, 150 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="MarketController" parent="VBC/HBC/VSC/ScrollContainer" instance=ExtResource( 6 )]
+margin_bottom = 397.0
+rect_min_size = Vector2( 0, 0 )
+size_flags_horizontal = 3
+
+[node name="EventLog" parent="VBC/HBC/VSC" instance=ExtResource( 7 )]
+margin_top = 409.0
+margin_bottom = 559.0
+size_flags_vertical = 1
+
+[node name="WinLabel" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -84.5
+margin_top = -256.5
+margin_right = 84.5
+margin_bottom = -219.5
+text = "you win!
+(you reached 100 balloons)"
+align = 1

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Item.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Outlet"
+plural_name = "Outlets"
+min_amount = 1
+max_amount = 3
+min_amount_money = 127
+max_amount_money = 227
+min_amount_balloons = 1
+max_amount_balloons = 4
+min_time = 18.0
+max_time = 24.0
+description_function = "get_outlet_description"

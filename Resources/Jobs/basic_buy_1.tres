@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Classes/Job.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Buy a balloon"
+cost_money = 100
+cost_balloons = 0
+reward_money = 0
+reward_balloons = 1
+repeat = false
+time = 5.0
+completion_function = ""
+description_function = "get_basic_buy_desc_1"
+dependent_unlocks = [  ]
+dependent_jobs = [ "BasicGather2" ]
